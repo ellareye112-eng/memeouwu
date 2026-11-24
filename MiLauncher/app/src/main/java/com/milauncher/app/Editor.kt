@@ -318,7 +318,7 @@ fun GlobalSheet(g: LauncherState, apps: List<AppEntry>, onClose: () -> Unit) {
             Small("Temas (se aplican a todas las barras)")
             Chips(THEMES.map { it.name to it.name }, "") { n -> THEMES.firstOrNull { it.name == n }?.let { g.applyTheme(it, apps) } }
             Small("Animación de entrada")
-            Chips(ENTRANCES, g.entrance) { v -> g.setEntrance(v) }
+            Chips(ENTRANCES, g.entrance) { v -> g.chooseEntrance(v) }
             Spacer(Modifier.size(8.dp))
             Row(horizontalArrangement = Arrangement.spacedBy(7.dp)) {
                 TextChip("Repetir animación", false) { g.replayKey++ }
