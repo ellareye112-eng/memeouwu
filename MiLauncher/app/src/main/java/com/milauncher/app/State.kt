@@ -72,5 +72,5 @@ class LauncherState(val store: Store) {
     fun setSound(v: Boolean) { soundOn = v; store.soundOn = v }
     fun setGlow(v: Boolean) { glowOn = v; store.glowOn = v }
     fun setStep(v: Int) { seqStep = v; store.seqStep = v }
-    fun setEntrance(v: String) { entrance = v; store.entrance = v; replayKey++ }
+    fun chooseEntrance(v: String) { entrance = v; store.entrance = v; replayKey++ }
 }
