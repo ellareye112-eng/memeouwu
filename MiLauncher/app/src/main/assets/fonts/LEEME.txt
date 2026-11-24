@@ -1,0 +1,2 @@
+Pon aquí archivos .ttf u .otf (por ejemplo, descargados de fonts.google.com)
+y aparecerán automáticamente en la lista de fuentes del launcher al volver a compilar.
